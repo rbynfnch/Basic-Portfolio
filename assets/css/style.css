@@ -1,12 +1,12 @@
 body {
   padding: 0;
   margin: 0;
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   line-height: 32px;
   color: #333;
-  background: #efeee7;
+  background: url("../images/gray-bg.jpg");
 }
 /*style header background*/
 .header {
@@ -53,12 +53,14 @@ body {
   float: right;
 }
 #container {
-  clear: both;
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
   overflow: auto;
   background: ##efeee7;
   margin: 0 auto;
+  clear: both;
 }
+
 #fixed {
   position: fixed;
   top: 0;
@@ -104,15 +106,21 @@ h2 {
   font-size: 36px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-aside {
+.about {
   background-color: #cccccc;
-  width: 33%;
-  height: 200px;
+
   border: 1px #eee;
   padding: 20px;
   float: left;
   margin-left: 0px;
   margin-right: 30px;
+}
+#portfolio-image {
+  float: left;
+  width: 30%;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
 }
 footer {
   clear: both;
@@ -163,14 +171,14 @@ input[type="submit"]:hover {
 }
 div.gallery-1 {
   position: relative;
-  margin: 10px;
+  margin: 20px;
   float: left;
   width: 30%;
   padding: 0px;
 }
 div.gallery {
   position: relative;
-  margin: 10px;
+  margin: 20px;
   float: left;
   width: 30%;
   padding: 0px;
